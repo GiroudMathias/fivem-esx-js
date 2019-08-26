@@ -3,11 +3,11 @@
 [![HitCount](http://hits.dwyl.io/GiroudMathias/fivem-esx-js.svg)](http://hits.dwyl.io/GiroudMathias/fivem-esx-js)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/GiroudMathias/fivem-esx-js/issues)
 
-[![https://nodei.co/npm/fivem-js.png?downloads=true&downloadRank=true&stars=true](https://nodei.co/npm/fivem-js.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/fivem-js)
+[![https://nodei.co/npm/fivem-dev-js.png?downloads=true&downloadRank=true&stars=true](https://nodei.co/npm/fivem-dev-js.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/fivem-dev-js)
 
 _Javascript/Typescript wrapper for the FiveM ESX Framework natives._
 
-Features based on the [**ESX framework for FiveM**](https://esx-org.github.io/). This module will allow you to fully exploit ESX from your JavaScript/TypeScript developments
+Features based on the [**ESX framework for FiveM**](https://esx-org.github.io/). This module will allow you to fully exploit ESX from your JavaScript/TypeScript developments.
 ## Features
 
 - Two dependencies [@citizenfx/client](https://www.npmjs.com/package/@citizenfx/client) and [fivem-js](https://www.npmjs.com/package/fivem-js)
