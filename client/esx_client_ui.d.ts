@@ -1,5 +1,4 @@
 import {ESXClientUIMenuData} from "../classes/esx_client_ui_menu_data";
-import {TODO} from "./esx_client";
 
 export declare class ESXClientUI {
 
@@ -9,7 +8,7 @@ export declare class ESXClientUI {
      * @param item
      * @param count
      */
-    ShowInventoryItemNotification(add: TODO, item: TODO, count: TODO);
+    ShowInventoryItemNotification(add: string, item: string, count: number);
 
     HUD: ESXClientUIHUD;
 
@@ -25,26 +24,26 @@ declare class ESXClientUIHUD {
      * @param html
      * @param data
      */
-    RegisterElement(name: TODO, index: TODO, priority: TODO, html: TODO, data: TODO);
+    RegisterElement(name: string, index: number, priority: number, html: string, data: string);
 
     /**
      * This function removes a HUD element.
      * @param name
      */
-    RemoveElement(name: TODO);
+    RemoveElement(name: string);
 
     /**
      * This function sets the HUD opacity.
      * @param opacity
      */
-    SetDisplay(opacity: TODO);
+    SetDisplay(opacity: number);
 
     /**
      * This function updates HUD elements.
      * @param name
      * @param data
      */
-    UpdateElement(name: TODO, data: TODO);
+    UpdateElement(name: string, data: string);
 }
 
 declare class ESXClientUIMenu {
@@ -54,7 +53,7 @@ declare class ESXClientUIMenu {
      * @param namespace
      * @param name
      */
-    Close(type: TODO, namespace: TODO, name: TODO);
+    Close(type: string, namespace: string, name: string);
 
     /**
      * This function closes all open menus.
@@ -68,7 +67,7 @@ declare class ESXClientUIMenu {
      * @param namespace
      * @param name
      */
-    GetOpened(type: TODO, namespace: TODO, name: TODO): TODO;
+    GetOpened(type: string, namespace: string, name: string): ESXClientUIMenuData;
 
     /**
      * This function checks if a menu is open.
@@ -76,7 +75,7 @@ declare class ESXClientUIMenu {
      * @param namespace
      * @param name
      */
-    IsOpen(type: TODO, namespace: TODO, name: TODO): TODO;
+    IsOpen(type: string, namespace: string, name: string): ESXClientUIMenuData;
 
     /**
      * This function opens a menu.
@@ -97,5 +96,5 @@ declare class ESXClientUIMenu {
      * @param open
      * @param close
      */
-    RegisterType(type: TODO, open: TODO, close: TODO);
+    RegisterType(type: string, open: Function, close: Function);
 }

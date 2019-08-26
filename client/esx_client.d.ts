@@ -14,7 +14,7 @@ export class ESXClient {
     /**
      * This function checks if the player is loaded
      */
-    IsPlayerLoaded(): TODO;
+    IsPlayerLoaded(): boolean;
 
     /**
      * This function sets player data.
@@ -31,7 +31,7 @@ export class ESXClient {
      * @param icon
      * @param iconType
      */
-    ShowAdvancedNotification(title: string, subject: string, message: string, icon: TODO, iconType: number);
+    ShowAdvancedNotification(title: string, subject: string, message: string, icon: string, iconType: number);
 
     /**
      * This function shows a help notification with the parsed message. These help notification support displaying button inputs, see this list
@@ -67,6 +67,3 @@ export class ESXClient {
     UI: ESXClientUI;
 }
 
-declare class TODO {
-
-}

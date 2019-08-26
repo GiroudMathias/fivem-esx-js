@@ -1,7 +1,9 @@
-# fivem-js
+# fivem-esx-js
 
 [![HitCount](http://hits.dwyl.io/GiroudMathias/fivem-esx-js.svg)](http://hits.dwyl.io/GiroudMathias/fivem-esx-js)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/GiroudMathias/fivem-esx-js/issues)
+
+[![https://nodei.co/npm/fivem-js.png?downloads=true&downloadRank=true&stars=true](https://nodei.co/npm/fivem-js.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/fivem-js)
 
 _Javascript/Typescript wrapper for the FiveM ESX Framework natives._
 
@@ -18,8 +20,21 @@ _Note: Not all features are currently available. They will be added as developme
 ## Usage
 
 ### Typescript
+#### Client side
+create a file "esx.ts" containing:
+```typescript
+import {ESXClient} from "fivem-esx-js/client/esx_client";
 
-TODO
+export let ESX: ESXClient;
+emit('esx:getSharedObject', (obj) => {
+    ESX = obj;
+});
+```
+ESX is now available! example on "test.ts":
+```typescript
+import {ESX} from "../esx";
+ESX.ShowNotification('Hello World !');
+```
 
 ### Javascript
 TODO
