@@ -1,0 +1,10 @@
+{
+  "name": "fivem-esx-js",
+  "version": "0.0.1",
+  "description": "Javascript/Typescrtipt wrapper for the FiveM ESX core natives",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Darkotus",
+  "license": "ISC"
+}
