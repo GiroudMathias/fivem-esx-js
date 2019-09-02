@@ -6,14 +6,14 @@ export class ESXCommon {
      * This function gets a random string, with the defined length.
      * @param length
      */
-    GetRandomString(length: number): string
+    GetRandomString(length: number): string;
 
     /**
      * This function returns the weapon component object for a weapon. Includes the component label, name and hash key. See the weapon config file for the available components.
      * @param weaponName
      * @param weaponComponent
      */
-    GetWeaponComponent(weaponName: string, weaponComponent: string): ESXWeaponComponent
+    GetWeaponComponent(weaponName: string, weaponComponent: string): ESXWeaponComponent;
 
     /**
      * This function gets the weapon label for a given weapon.
@@ -24,20 +24,20 @@ export class ESXCommon {
     /**
      * This function gets the complete weapon list and label.
      */
-    GetWeaponList(): ESXWeapon[]
+    GetWeaponList(): ESXWeapon[];
 
     /**
      * This function sets a timeout requiring two arguments, msec (milliseconds), and cb (callback).
      * @param milliseconds
      * @param callback
      */
-    SetTimeout(milliseconds: number, callback: Function)
+    SetTimeout(milliseconds: number, callback: Function);
 
     /**
      * This function clears a timeout from the ESX.SetTimeout function.
      * @param id
      */
-    ClearTimeout(id: number)
+    ClearTimeout(id: number);
 
-    Math: ESXCommonMath
+    Math: ESXCommonMath;
 }
