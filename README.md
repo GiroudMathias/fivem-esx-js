@@ -3,7 +3,7 @@
 [![HitCount](http://hits.dwyl.io/GiroudMathias/fivem-esx-js.svg)](http://hits.dwyl.io/GiroudMathias/fivem-esx-js)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/GiroudMathias/fivem-esx-js/issues)
 
-[![https://nodei.co/npm/fivem-dev-js.png?downloads=true&downloadRank=true&stars=true](https://nodei.co/npm/fivem-dev-js.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/fivem-dev-js)
+[![https://nodei.co/npm/fivem-esx-js.png?downloads=true&downloadRank=true&stars=true](https://nodei.co/npm/fivem-esx-js.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/fivem-dev-js)
 
 _Javascript/Typescript wrapper for the FiveM ESX Framework natives._
 

@@ -2,10 +2,11 @@ import {ESXGame} from "./esx_client_game";
 import {ESXClientUI} from "./esx_client_ui";
 import {ESXStreaming} from "./esx_client_streaming";
 import {ESXClientScaleform} from "./esx_client_scaleform";
+import {ESXCommon} from "../common/esx_common";
 
 export as namespace ESXClient;
 
-export class ESXClient {
+export class ESXClient extends ESXCommon{
     /**
      * This function gets player data.
      */
@@ -66,4 +67,3 @@ export class ESXClient {
 
     UI: ESXClientUI;
 }
-
