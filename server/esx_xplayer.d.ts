@@ -5,6 +5,7 @@ import {
     ESXServerXPlayerJob
 } from "../classes/esx_server_xplayer";
 import {Coords} from "../classes/coords";
+import {ESXWeapon} from "../classes/esx_weapon";
 
 export class ESXPlayer extends ESXServerXPlayer {
     /**
@@ -110,5 +111,165 @@ export class ESXPlayer extends ESXServerXPlayer {
      * This functions gets the last position of stuff.
      */
     getLastPosition(): Coords;
-    // TODO Continue script
+
+    /**
+     * This function gets a loadout.
+     */
+    getLoadout(): ESXWeapon[];
+
+    /**
+     * This function gets missing accounts.
+     */
+    getMissingAccounts(): ESXServerXPlayerAccount[];
+
+    /**
+     * This function gets money.
+     */
+    getMoney(): number;
+
+    /**
+     * This function gets a name.
+     */
+    getName(): string;
+
+    /**
+     * This function gets a permission level.
+     */
+    getPermissions(): number;
+
+    /**
+     * This function gets the EssentialMode player object.
+     */
+    getPlayer(): ESXPlayer;
+
+    /**
+     * This function gets a session variable.
+     * @param key
+     */
+    getSessionVar(key: string): string;
+
+    /**
+     * This functions returns if the loadoutNum and a weapon object for the weapon if the player has it.
+     * @param weaponName
+     */
+    getWeapon(weaponName: string): ESXWeapon;
+
+    /**
+     * This functions returns if the player has the specified weapon.
+     * @param weaponName
+     */
+    hasWeapon(weaponName: string): boolean;
+
+    /**
+     * This functions returns (boolean) if the player has the specified weapon component for a given weapon.The available component list can be found in the weapon config file.
+     * @param weaponName
+     * @param weaponComponent
+     */
+    hasWeaponComponent(weaponName: string, weaponComponent: string): boolean;
+
+    /**
+     * This function kicks a player with a reason.
+     * @param reason
+     */
+    kick(reason: string);
+
+    /**
+     * This function removes account money.
+     * @param account
+     * @param money
+     */
+    removeAccountMoney(account: string, money: number);
+
+    /**
+     * This function removes bank money.
+     * @param money
+     */
+    removeBank(money: number);
+
+    /**
+     * This function removes an inventory item.
+     * @param itemName
+     * @param count
+     */
+    removeInventoryItem(itemName: string, count:number);
+
+    /**
+     * This function removes money.
+     * @param money
+     */
+    removeMoney(money: number);
+
+    /**
+     * This function removes a weapon from the player.
+     * @param weaponName
+     * @param ammo
+     */
+    removeWeapon(weaponName: string, ammo: number);
+
+    /**
+     * This function removes a weapon component from a player, if the player has it.The available component list can be found in the weapon config file.
+     * @param weaponName
+     * @param weaponComponent
+     */
+    removeWeaponComponent(weaponName: string, weaponComponent: string);
+
+    /**
+     * This function sets account money.
+     * @param accountName
+     * @param money
+     */
+    setAccountMoney(accountName: string, money: number);
+
+    /**
+     * This function sets bank balance.
+      * @param money
+     */
+    setBankBalance(money: number);
+
+    /**
+     * This function sets coordinates.
+     * @param x
+     * @param y
+     * @param z
+     */
+    setCoords(x: number, y: number, z: number);
+
+    /**
+     *
+     * @param itemName
+     * @param count
+     */
+    setInventoryItem(itemName: string, count: number);
+
+    /**
+     * This functions sets a job for a player.
+     * @param name
+     * @param grade
+     */
+    setJob(name: string, grade: number);
+
+    /**
+     * This function sets money.
+     * @param money
+     */
+    setMoney(money: number);
+
+    /**
+     * This function sets the player name.
+     * @param name
+     */
+    setName(name: string);
+
+    /**
+     * This function sets a permission level.
+     * @param permissionLevel
+     */
+    setPermissions(permissionLevel: number);
+
+    /**
+     * This function sets a session variable.
+     * @param key
+     * @param value
+     */
+    setSessionVar(key: string, value: string);
 }

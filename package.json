@@ -1,11 +1,28 @@
 {
   "name": "fivem-esx-js",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Javascript/Typescrtipt wrapper for the FiveM ESX core natives",
   "dependencies": {
     "@citizenfx/client": "^1.0.1552-1",
     "fivem-js": "^1.3.0"
   },
-  "author": "Darkotus",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GiroudMathias/fivem-esx-js.git"
+  },
+  "keywords": [
+    "fivem",
+    "wrapper",
+    "esx",
+    "citizenfx",
+    "typescript",
+    "javascript"
+  ],
+  "bugs": {
+    "url": "https://github.com/GiroudMathias/fivem-esx-js/issues"
+  },
+  "homepage": "https://github.com/GiroudMathias/fivem-esx-js#readme",
+  ,
+  "author": "Giroud Mathias <Darkotus>",
+  "license": "MIT"
 }
