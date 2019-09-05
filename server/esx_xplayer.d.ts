@@ -39,7 +39,7 @@ export class ESXPlayer extends ESXServerXPlayer {
      * @param weaponName
      * @param ammo
      */
-    addWeapon(weaponName: string, ammo: number);
+    addWeapon(weaponName: string, ammo?: number);
 
     /**
      * This function adds a weapon component to a weapon, if the player has it.
@@ -205,7 +205,7 @@ export class ESXPlayer extends ESXServerXPlayer {
      * @param weaponName
      * @param ammo
      */
-    removeWeapon(weaponName: string, ammo: number);
+    removeWeapon(weaponName: string, ammo?: number);
 
     /**
      * This function removes a weapon component from a player, if the player has it.The available component list can be found in the weapon config file.
