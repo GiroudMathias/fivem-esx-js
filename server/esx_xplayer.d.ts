@@ -37,8 +37,9 @@ export class ESXPlayer extends ESXServerXPlayer {
     /**
      * This function adds a weapon.
      * @param weaponName
+     * @param ammo
      */
-    addWeapon(weaponName: string);
+    addWeapon(weaponName: string, ammo: number);
 
     /**
      * This function adds a weapon component to a weapon, if the player has it.
