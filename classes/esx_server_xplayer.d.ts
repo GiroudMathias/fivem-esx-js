@@ -1,8 +1,12 @@
+import {Coords} from "./coords";
+
 export class ESXServerXPlayer {
     name: string;
+    source: number;
     accounts: ESXServerXPlayerAccount[];
     inventory: ESXServerXPlayerInventoryItem[];
     job: ESXServerXPlayerJob;
+    lastPosition: Coords;
 }
 export interface ESXServerXPlayerAccount {
     name: string,
