@@ -66,4 +66,7 @@ export class ESXClient extends ESXCommon{
     Streaming: ESXStreaming;
 
     UI: ESXClientUI;
+
+    GetWeaponLabel(weaponName: string): string;
+    GetWeaponList(): Weapon[]
 }
