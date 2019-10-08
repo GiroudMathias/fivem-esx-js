@@ -68,5 +68,5 @@ export class ESXClient extends ESXCommon{
     UI: ESXClientUI;
 
     GetWeaponLabel(weaponName: string): string;
-    GetWeaponList(): Weapon[]
+    GetWeaponList(): any[]
 }
