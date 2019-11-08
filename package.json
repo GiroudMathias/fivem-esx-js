@@ -1,6 +1,6 @@
 {
   "name": "fivem-esx-js",
-  "version": "0.1.0",
+  "version": "0.1.12",
   "description": "Javascript/Typescript wrapper for the FiveM ESX core natives",
   "dependencies": {
     "@citizenfx/client": "^1.0.1688-1",
