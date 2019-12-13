@@ -36,7 +36,7 @@ export class ESXServer extends ESXCommon {
      * This function returns an array of all online players ID's.
      * You can use this to access each players data.
      */
-    GetPlayers(): ESXPlayer[];
+    GetPlayers(): number[];
 
     /**
      * This function registers a server callback.
