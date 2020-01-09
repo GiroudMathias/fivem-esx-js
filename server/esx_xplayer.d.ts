@@ -273,4 +273,17 @@ export class ESXPlayer extends ESXServerXPlayer {
      * @param value
      */
     setSessionVar(key: string, value: string);
+
+    /**
+     * This function sends a help notification to the player. These help notification support displaying button inputs, see this list
+     * https://pastebin.com/HPg8pYwi
+     * @param msg
+     */
+    showHelpNotification(msg: string);
+
+    /**
+     * This function sends a notification to the player
+     * @param msg
+     */
+    showNotification(msg: string);
 }
