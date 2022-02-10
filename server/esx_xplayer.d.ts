@@ -109,6 +109,11 @@ export class ESXPlayer extends ESXServerXPlayer {
     getJob(): ESXServerXPlayerJob;
 
     /**
+     * This function gets a job.
+     */
+    getSecondaryJob(): ESXServerXPlayerJob;
+
+    /**
      * This functions gets the last position of stuff.
      */
     getLastPosition(): Coords;
@@ -248,6 +253,13 @@ export class ESXPlayer extends ESXServerXPlayer {
      * @param grade
      */
     setJob(name: string, grade: number);
+
+    /**
+     * This functions sets a secondary job for a player.
+     * @param name
+     * @param grade
+     */
+    setSecondaryJob(name: string, grade: number);
 
     /**
      * This function sets money.

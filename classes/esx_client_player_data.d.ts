@@ -9,6 +9,7 @@ export declare interface ESXClientPlayerData {
         z: number
     },
     job: ESXClientPlayerJob,
+    secondaryJob: ESXClientPlayerJob,
     accounts: ESXClientPlayerAccount[]
 }
 
