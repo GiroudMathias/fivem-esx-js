@@ -27,6 +27,7 @@ export interface ESXServerXPlayerInventoryItem {
 export interface ESXServerXPlayerJob {
     id: number,
     name: string,
+    type: string,
     label: string,
     grade: number,
     grade_name: string,

@@ -62,6 +62,19 @@ export class ESXPlayer extends ESXServerXPlayer {
     displayMoney(money: number);
 
     /**
+     * This function set a xPlayer variable.
+     * @param key key to set
+     * @param value value to set
+     */
+    set<T>(key: string, value: T);
+
+    /**
+     * This function gets a xPlayer variable.
+     * @param key key to get
+     */
+    get<T>(key: string): T;
+
+    /**
      * This function gets an account.
      * @param name
      */
