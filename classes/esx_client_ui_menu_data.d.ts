@@ -3,7 +3,7 @@ export declare interface ESXClientUIMenuData {
     align: string,
     elements?: {
         label: string,
-        identifier: string,
-        submit(any?): void
+        identifier?: string,
+        submit?(any?): void
     }[],
 }
